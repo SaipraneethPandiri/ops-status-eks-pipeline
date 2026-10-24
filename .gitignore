@@ -1,0 +1,19 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Terraform: never commit state, plans or provider binaries (DO commit .terraform.lock.hcl)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+crash.log
+
+# Keys and secrets
+*.pem
+*.key
+.env
+kubeconfig*
